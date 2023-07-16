@@ -1,0 +1,449 @@
+*{
+     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+
+/* start of navbar section */
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+}
+header{
+    background: linear-gradient(45deg, rgba(23, 23, 23, 0.96), rgba(17, 18, 10, 0.75)), url(https://www.ecollecteg.com/images/e-waste.jpg) no-repeat center fixed ;
+   background-size: cover;
+    
+  
+    
+}
+header .overlay{
+    background-color:  rgba(0,0,0,0);
+      height: 100vh;
+}
+header  .second{
+  
+    color: #fff;
+    position: relative;
+    text-align: center;
+    top: 30vh;
+    margin: 0 auto;
+    letter-spacing: 2px;
+    
+    
+    
+}
+.try{
+    top:-7px;
+}
+header  .second h1{
+    font-family:serif;
+    font-size: 50px;
+}
+header  .second p{
+    font-size: 25px;
+    letter-spacing: 0px;
+}
+header .second button{
+    background-color: transparent;
+    border-color: #fff;
+    width: 240px;
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 23px;
+    margin-top: 5px;
+    
+}
+button.btn.btn-primary.last{
+    width: 150px;
+    font-size: 18px;
+    margin-top: 14px;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle{
+     background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+.btn-primary:focus, .btn-primary.focus{
+    box-shadow: none;
+  background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+button.btn.btn-primary:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    
+}
+header  .second h1 span{
+    font-weight: bold;
+}
+.navbar-brand span:first-child{
+    color: #08526d;
+    font-weight: bold;
+}
+.navbar-brand span:last-child{
+    color: #ec1c23;
+}
+.navbar-brand span{
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #ec1c23;
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+}
+
+/* end of navbar section */
+/* start about us section */
+.about-us{
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+}
+.about-us h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-us span{
+    height: 3px;
+    width: 60px;
+    background-color: blue;
+     margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.about-us .cotainer img{
+    width: 700px;
+    height: 372px;
+    margin-left: 15px;
+    max-width: 95%;
+}
+.about-us .cotainer li{
+        float: left;
+    position: relative;
+    top: 4px;
+    margin-right: 9px;
+}
+/* end about us section */
+/* start why us section */
+.why-us {
+    background: linear-gradient(45deg, rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)), url(https://www.ecollecteg.com/img/call-to-action-bg.jpg) no-repeat center fixed ;
+   background-size: cover;
+    color: #FFF;
+}
+.why-us h1{
+    padding: 30px;
+    padding-bottom: 40px;
+    
+}
+.why-us .container .row h1{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.why-us .container .row p{
+    margin-bottom: 60px;
+}
+i.fa.fa-4x {
+    font-size: 7em;
+}
+/* end why us section */
+
+/* start types section */
+.types{
+    background-color: #000;
+    color: #fff;
+}
+.types span{
+    height: 3px;
+    width: 60px;
+    background-color: blue;
+     margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.types h1 {
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+.types img{
+    margin-bottom: 25px;
+}
+.types ul{
+    text-align: left;
+    margin-bottom: 70px;
+}
+/* end types section */
+
+/* Start FAQ's section */
+.faq{
+    background-color: #323232;
+    color: #fff;
+    padding-bottom: 70px;
+}
+.faq h1 {
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+.faq span{
+    height: 3px;
+    width: 60px;
+    background-color: blue;
+     margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.faq .small{
+    padding: 15px;
+    font-size: 100%;
+    padding-bottom: 80px;
+}
+.faq .left{
+    margin-left: 10%;
+}
+.accordion {
+
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.6s;
+}
+
+.faq .active{
+    color: orange !important;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+    font-size: 40px;
+    position: relative;
+    top:-15px;
+          transition: all 0.5s ease-in-out;
+
+}
+
+.active:after {
+  content: "\2212";
+    color: #ffa500;
+      transition: all 0.5s ease-in-out;
+
+}
+
+.panel {
+
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-out;
+}
+button.accordion{
+        background-color: #323232;
+    font-size: 26px;
+    color: #fff;
+}
+.active, .accordion:hover{
+    background-color: #323232;
+}
+hr{
+   border: 1px solid #fff;
+    display: block;
+}    
+button:focus{
+    outline: none;
+}
+/* End FAQ's section */
+
+/* Start Gellry section */
+.gallery{
+    background-color: #323242;
+    color: #fff;
+    
+    
+}
+.gallery h1 {
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+.gallery .container{
+    padding-bottom: 1px;
+}
+.gallery span{
+    height: 3px;
+    width: 60px;
+    background-color: blue;
+     margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.gallery img{
+    width: 100%;
+    
+}
+.gallery .col-md-6.col-lg-4{
+    padding: 0px;
+}
+.gallery button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 15px;
+    
+}
+.gallery button i{
+    animation-name: arrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    position: relative;
+}
+i.fa.fa-arrow-circle-down{
+     font-size: 32px;
+}
+i.fa.fa-arrow-circle-up{
+     font-size: 32px;
+    
+}
+.gallery .work{
+        overflow: hidden;
+height: auto;
+     transition: max-height 0.4s ease-in-out;
+    max-height: 1000px;
+}
+.gallery .happy{
+   max-height:  0px;
+   
+}
+.gallery .work .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+@keyframes arrow{
+    0% {top: 0px;}
+    20%   {top: -20px;}
+  30%  {top: 0px;}
+  40%  {top: -10px;}
+  50% {top: 0px;}
+    100% {top: 0px;}
+}
+/* End Gallery section */
+
+/* Start Request section */
+.request{
+    background-color:#3b4d3f;
+    color: #fff;
+    
+    
+}
+.request h1 {
+    padding: 20px;
+    padding-top: 40px;
+    
+}
+.request .container{
+    padding-bottom: 20px;
+}
+.request .style{
+    height: 3px;
+    width: 60px;
+    background-color: blue;
+     margin: 0 auto;
+    margin-bottom: 30px;
+    display: block;
+}
+.request .ind{
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.request h6{
+    
+}
+.request p.info {
+    font-size: 21px;
+    font-weight: 600;
+    
+}
+.request .new:after {
+    content: ' \002B';
+    color: green;
+    font-size: 50px;
+    position: relative;
+    top: -26px;
+    margin-left: 50%;
+    cursor: pointer;   
+}
+.request .newC:after {
+    content: ' \002B';
+    color: green;
+    font-size: 50px;
+    position: relative;
+    top: -26px;
+    margin-left: 50%;
+    cursor: pointer;   
+}
+.col-md-1.new,
+.col-md-1.no{
+    height: 40px;
+}
+.col-md-1.newC,
+.col-md-1.noC{
+    height: 40px;
+}
+.request .no:after {
+    content: ' \2212';
+    color: red;
+    font-size: 50px;
+    position: relative;
+    top: -26px;
+    margin-left: 50%;
+    cursor: pointer;    
+}
+.request .noC:after {
+    content: ' \2212';
+    color: red;
+    font-size: 50px;
+    position: relative;
+    top: -26px;
+    margin-left: 50%;
+    cursor: pointer;    
+}
+.request .ind button {
+    background-color: #000;
+    border-color: #000;
+    width: 140px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 23px;
+    margin-top: 5px;
+}
+.request .ind button:hover
+{
+    background-color: #000;
+    color: #fff;
+    border-color:#000;
+}
+.request .ind button:active{
+     background-color: #000;
+    color: #fff;
+    border-color:#000;
+}

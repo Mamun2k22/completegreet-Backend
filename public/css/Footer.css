@@ -1,0 +1,57 @@
+footer .footer-container{
+    background-color: #3B5DCD;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+footer .footer-container img{
+    width: 100px;
+}
+footer .footer-container .footer-logo-Text{
+
+    color: #fff;
+    font: normal normal 900 42px Montserrat;
+    font-size: min(42px,11vw);
+}
+footer .footer-container .footer-mail-info{
+    color: #fff;
+    font-size: 20px;
+
+}
+footer .footer-container .footer-location-info{
+    color: #fff;
+    font-size: 20px;
+
+}
+footer .footer-container .footer-nav{
+    background-color: #ffffff75;
+    border-radius: 20px;
+
+}
+footer .footer-container a.footer-nav-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+
+}
+footer .footer-container .footer-nav-n {
+    background-color: #ffffff75;
+    border-radius: 20px;
+
+}
+footer .footer-container .media-links {
+    justify-content: space-evenly;
+
+}
+footer .footer-container a.footer-nav-media-link {
+    color: #fff;
+    font-size: 30px;
+
+}
+footer .footer-container .copyrights {
+    color: #fff;
+    font-size: 15px;
+
+}

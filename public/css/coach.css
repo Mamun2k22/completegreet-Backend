@@ -1,0 +1,13 @@
+body{
+    background-attachment: fixed;
+    background-image: -webkit-linear-gradient(67deg, #fff, #0ff);}
+.container{
+    background-color: #fff;
+    margin-top:8% ;
+    margin-bottom: 8%;
+    padding: 30px;
+    border-radius: 20px;
+}
+.container img{
+    width: 100%;
+}

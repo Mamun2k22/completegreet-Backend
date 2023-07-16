@@ -1,0 +1,259 @@
+.Chat-Container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.Un-Subs-Chat-Container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.Chat-Username{
+    white-space: nowrap;
+    font: normal normal bold 20px/31px Poppins;
+    letter-spacing: 0px;
+    color: #06227E;
+}
+.Chat-Container img{
+    width:50px;
+}
+.Un-Subs-Chat-Container img{
+    width:50px;
+}
+.Messages-Large-Container{
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    border-radius: 36px;
+    height: 65vh;
+    word-break: break-all;
+}
+.Chat-Head-Name{
+    font: normal normal bold 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+.Messages-Container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 35px;
+    overflow: auto;
+    /*height: 88.2%;*/
+    padding-bottom: 75px;
+    flex: 1 1 auto;
+    word-break: break-word;
+
+}
+.Sent-Message{
+    position: relative;
+    color: #fff;
+    background: transparent linear-gradient(106deg, #3B5DCD 0%, #1E2F67 100%) 0% 0% no-repeat padding-box;
+    width: 68%;
+    padding: 13px;
+    margin-left: auto;
+    border-radius: 12px;
+    border-bottom-right-radius: 0px;
+
+}
+.Sent-Message-Container .Message-Date{
+  width: fit-content;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #63697B;
+    margin-top: -13px;
+    margin-bottom: 10px;
+    margin-right: 45px;
+}
+.Received-Message{
+    background: #3B5DCD1A 0% 0% no-repeat padding-box;
+    width: 68%;
+    padding: 13px;
+    border-radius: 12px;
+    border-bottom-left-radius: 0px;
+}
+.Received-Message-Container  .Message-Date{
+    width: fit-content;
+    font: normal normal normal 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color: #63697B;
+    margin-top: -13px;
+    margin-bottom: 10px;
+}
+.Messages-Container img{
+    width: 42px;
+    height: 42px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: auto;
+}
+.Sent-Message::after {
+    content: '';
+    position: absolute;
+    bottom:0pc;
+    right: -16px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.Sent-Message::after {
+    border-width: 7px;
+    border-right-width: 13px;
+    border-left-color: #1E2F67;
+    border-bottom-color: #1E2F67;
+}
+.Received-Message::after {
+    content: '';
+    position: absolute;
+    bottom:0pc;
+    left: -17px;
+    border-color: transparent;
+    border-style: solid;
+}
+.Received-Message::after {
+    border-width: 7px;
+    border-right-width: 10px;
+    border-right-color: #3B5DCD1A;
+    border-bottom-color: #3B5DCD1A;
+}
+
+.Msg-Input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #3B5DCD1C 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    padding-right: 50px;
+    padding-left: 35px;
+}
+.Message-Inputs{
+    position: absolute;
+    bottom: 10px;
+    background-color: #fff;
+    left: 50%;
+    border-radius: 25px;
+    transform: translateX(-50%);
+     width: 90%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.Send-msg-btn{
+    position: absolute;
+    right: 0%;
+    bottom: 0px;
+    display: flex;
+    width: 47px;
+    /* outline: none; */
+    background: transparent;
+    border: none;
+    height: 100%;
+    color: #3B5DCD;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+button:focus{
+    outline: none;
+}
+button:focus-visible{
+    outline: none;
+}
+.Send-msg-btn:disabled,
+.Send-msg-btn[disabled]{
+   opacity: 0.6;
+}
+.Message-Inputs-Background-box{
+    height: 65px;
+    position: absolute;
+    bottom: -1px;
+    background-color: #fff;
+    width: calc(100% - 17px);
+    box-shadow: -4px -7px 8px -9px #00000075;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 8px;
+}
+.Notification-msg{
+    background-color: #3B5DCD;
+    color: #fff;
+    padding: 2px;
+    border-radius: 50%;
+    height: 20px;
+    min-width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Chats-Container{
+    max-height: 50vh;
+    overflow: auto;
+}
+/*--------- Editing Scroll bar for chat ------------*/
+.Chats-Container::-webkit-scrollbar{
+    width: 5px;
+    border: none;
+    background: rgba(51, 51, 51, 0.5);
+}
+.Chats-Container::-webkit-scrollbar-thumb{
+    width: 5px;
+    border: none;
+    background: rgba(51, 51, 51, 0.5);
+}
+.Chats-Container::-webkit-scrollbar-track {
+    width: 8px;
+    border: none;
+    background: #fff;
+}
+.Button {
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    min-width: 80px;
+    border: none;
+    border-bottom: 4px solid #9E5417 ;
+    background: #CD7D3B 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    cursor: pointer;
+    outline: none!important;
+
+}
+.chat-user-info{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #3B5DCD21;
+    border-radius: 22px;
+
+}
+/*//----------Styling Emojis ---------//*/
+.emojionearea.emojionearea-inline{
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+}
+.emojionearea.emojionearea-inline>.emojionearea-editor{
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    position: unset!important;
+}
+.emojionearea.emojionearea-inline>.emojionearea-button{
+    top:11px;
+    left: 8px;
+}
+.emojionearea, .emojionearea.form-control{
+    position: unset!important;
+
+}
+@media (max-width: 768px) {
+    .hide-cont{
+        height: 0px;
+        overflow: hidden;
+    }
+    .Messages-Large-Container {
+        height: 90vh;
+    }
+}
+@media (pointer:none), (pointer:coarse) {
+    .Message-Inputs-Background-box{
+        width: 100%;
+        border-bottom-right-radius: 35px;
+    }
+}

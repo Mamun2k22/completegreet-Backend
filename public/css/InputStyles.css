@@ -1,0 +1,46 @@
+
+
+
+
+.md-form input:not([type]):focus:not([readonly]), .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .md-form input[type="phone"]:not(.browser-default):focus:not([readonly]), .md-form input[type="search-md"]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #13b7f3!important;
+    -webkit-box-shadow: 0 1px 0 0 #13b7f3!important;
+    box-shadow: 0 1px 0 0 #13b7f3!important;
+}
+.md-form input:not([type]):focus:not([readonly])+label, .md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="phone"]:not(.browser-default):focus:not([readonly])+label, .md-form input[type="search-md"]:focus:not([readonly])+label, .md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #13b7f3!important;
+}
+
+/*-------------- Add Invalid text ---------*/
+.Add-Plan .Invalid{
+    font-size: 13px;
+    color: red;
+    display: none;
+}
+/*.text-invalid input:not([type]), .text-invalid input[type="text"]:not(.browser-default), text-invalid input[type="password"]:not(.browser-default), text-invalid input[type="email"]:not(.browser-default), text-invalid input[type="url"]:not(.browser-default), text-invalid input[type="time"]:not(.browser-default), text-invalid input[type="date"]:not(.browser-default), text-invalid input[type="datetime"]:not(.browser-default), text-invalid input[type="datetime-local"]:not(.browser-default), text-invalid input[type="tel"]:not(.browser-default), text-invalid input[type="number"]:not(.browser-default), text-invalid input[type="search"]:not(.browser-default), text-invalid input[type="phone"]:not(.browser-default), text-invalid input[type="search-md"], text-invalid textarea.md-textarea {*/
+/*    -webkit-box-sizing: content-box;*/
+/*    box-sizing: content-box;*/
+/*    background-color: transparent;*/
+/*    border: none;*/
+/*    border-bottom: 1px solid red!important;*/
+/*    border-radius: 0;*/
+/*    outline: none;*/
+/*    -webkit-box-shadow: none;*/
+/*    box-shadow: none;*/
+/*    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;*/
+/*    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;*/
+/*    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;*/
+/*    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;*/
+/*}*/
+
+
+
+/*for Search input*/
+ .md-form input:not([type]):focus:not([readonly]),.Search-Container  .md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="password"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="email"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="url"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="time"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="date"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="tel"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="number"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="search"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="phone"]:not(.browser-default):focus:not([readonly]), .Search-Container .md-form input[type="search-md"]:focus:not([readonly]), .Search-Container .md-form textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #c4c8cb!important;
+    -webkit-box-shadow: 0 1px 0 0 #c4c8cb!important;
+    box-shadow: 0 1px 0 0 #c4c8cb!important;
+}
+ .md-form input:not([type]):focus:not([readonly])+label,.Search-Container .md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="phone"]:not(.browser-default):focus:not([readonly])+label, .Search-Container .md-form input[type="search-md"]:focus:not([readonly])+label, .Search-Container .md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: rgba(19, 183, 243, 0.5) !important;
+}

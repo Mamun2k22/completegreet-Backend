@@ -1,0 +1,29 @@
+
+.personal-header{
+    font: normal normal bold 30px/37px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+}
+
+.Msg-Input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #3B5DCD1C 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    resize: none;
+}
+.text{
+    font: normal normal 500 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #000D36;
+}
+/*-----------------------------------------------------*/
+@media screen and (max-width: 767px) and (min-width:0px) {
+    .personal-header{
+        font: normal normal bold 19px/37px Montserrat;
+        letter-spacing: 0px;
+        color: #3B5DCD;
+    }
+}

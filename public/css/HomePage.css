@@ -1,0 +1,296 @@
+/*------------------ Section-1 Styles -------------*/
+.Section-1{
+    min-height:calc( 100vh - 80px);
+    /*height:100vh;*/
+}
+.getstart{
+    height: 55px;
+    margin: 45px 10px ;
+    width: 50%;
+    max-width: 680px;
+}
+.getstart button{
+    width: 213px;
+    justify-content: center;
+}
+.Section-1 .Home-page-Header{
+    font-size: 0px;
+    letter-spacing: 0px;
+    width: 80%;
+}
+.Section-1 .blueText{
+    color: #3B5DCD;
+}
+.Section-1 .Header-Text{
+    font: normal normal 900 70px/66px Montserrat;
+
+}
+.Section-1 .orangeText{
+    color: #CD7D3B;
+}
+.Section-1 .Description-Text{
+    font: normal normal 500 27px/33px Montserrat;
+}
+.Section-1 .Home-page-Description{
+    /*line-height:  max(calc(16px + 16 * (83vw - 600px) / 600),1.5rem);*/
+    margin-top: 24px;
+    width: 40%;
+}
+/*---------------- Dashed Arrow Css -----------*/
+.myarrow{
+    position:absolute;
+    /*top:0;*/
+    /*bottom:0;*/
+    bottom: 0%;
+    right: -15%;
+    transition: transform 0.3s;
+
+    transform: rotate(123deg);
+}
+.line {
+    border-right: 0.2rem dashed #CD7D3B;
+    display:inline-block;
+    height:10rem;
+}
+.arrow{
+    position:absolute;
+    top:-0.3rem;
+    bottom:16%;
+    height:1rem;
+    border-right: 0.2rem solid #CD7D3B;
+    display: inline-block;
+
+}
+.right{
+    left:0.3rem;
+    transform: rotate(-45deg);
+}
+.left{
+    right:0.3rem;
+    transform: rotate(45deg);
+}
+.Section-2-Header{
+    font: normal normal 900 70px/max(calc(16px + 16 * (180vw - 600px) / 600),2.0rem) Montserrat;
+    font-size: max(calc(16px + 16 * (139vw - 600px) / 600),2.0rem);    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+}
+.Section-2-Text{
+    font: normal normal 500 22px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+
+.z-2{
+    z-index: 2;
+}
+.mechanism{
+    width: fit-content;
+    /*font: normal normal 900 35px/59px Montserrat;*/
+    text-align: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    border: 14px solid #3B5DCD26;
+    border-radius: 60px;
+    font: normal normal 900 48px/72px Montserrat;
+    text-shadow: 0px 3px #000000;
+}
+/*------------------- FAQ ----------*/
+.accordion {
+
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.6s;
+}
+
+.faq .active{
+    color: orange !important;
+}
+
+.accordion:before {
+    content: '▲';
+    color: #00155A;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.Section-3 .active:before {
+    content: "▼";
+    transition: all 0.5s ease-in-out;
+
+}
+
+.panel {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+button.accordion{
+    font: normal normal 900 30px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    background-color: transparent;
+    padding: 10px;
+}
+.Section-3 .FAQ-Header{
+    width: 90%;
+    font: normal normal 900 40px/73px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 40px 80px #00000012;
+    border-radius: 42px;
+    margin: 0 auto;
+}
+.FAQ-Text{
+    font: normal normal 500 27px/33px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+.Section-3 button:focus{
+    outline: none;
+    border: none;
+}
+.Section-3 .FAQ-Container .customfaq{
+    background: rgba(59, 93, 205, 0.04) 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    margin: 10px;
+}
+/* Back to top button  */
+
+#BacktoTop {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 195px;
+    right: 25px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 15px #00000082;
+}
+/*#BacktoTop::after {*/
+/*    content: "\f077";*/
+/*    font-family: FontAwesome;*/
+/*    font-weight: normal;*/
+/*    font-style: normal;*/
+/*    font-size: 2em;*/
+/*    line-height: 50px;*/
+/*    color: #fff;*/
+/*}*/
+#BacktoTop:hover {
+    cursor: pointer;
+    background-color: #3153c3;
+}
+#BacktoTop:active {
+    background-color: #3153c3;
+}
+#BacktoTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Input-Style > input + span::before, .Input-Style > textarea + span::before{
+    min-width: 35%;
+}
+@media (max-width: 767.98px) {
+    .Input-Style > input + span::before, .Input-Style > textarea + span::before{
+        min-width: 8%;
+    }
+}
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
+}
+/* --------------------------------------- */
+/*------------- on mobile Style ---------------*/
+@media (pointer:none), (pointer:coarse) {
+    .Section-1{
+       /*height: 60vh;*/
+    }
+    /*------------------ Section-1 Styles -------------*/
+    .Section-1{
+        min-height:calc( 100vh - 80px);
+        /*height:100vh;*/
+    }
+    .getstart{
+        height: 55px;
+        margin: 45px 10px ;
+    }
+    .Section-1 .Home-page-Header{
+        font-size: 0px;
+        letter-spacing: 0px;
+        /*width: 70%;*/
+        width: auto;
+    }
+    .Section-1 .blueText{
+        color: #3B5DCD;
+    }
+    .Section-1 .Header-Text{
+        font: normal normal 900 70px/max(calc(16px + 16 * (180vw - 600px) / 600),2.0rem) Montserrat;
+        font-size: max(calc(16px + 16 * (129vw - 600px) / 600),2.0rem);
+
+    }
+    .Section-1 .orangeText{
+        color: #CD7D3B;
+    }
+    .Section-1 .Description-Text{
+        font: normal normal 500 27px/ max(calc(16px + 16 * (83vw - 600px) / 600),0.5rem) Montserrat;
+        font-size: max(calc(16px + 16 * (83vw - 600px) / 600),1.5rem);
+    }
+    .Section-1 .Home-page-Description{
+        line-height:  max(calc(16px + 16 * (83vw - 600px) / 600),1.5rem);
+        margin-top: 24px;
+        width: 80%;
+    }
+    .myarrow{
+        bottom: 35%;
+        right: -3%;
+        transform: rotate(180deg);
+    }
+    .getstart{
+        width: auto;
+    }
+    .getstart button{
+        width: auto;
+    }
+    .mechanism{
+        width: fit-content;
+        font: normal normal 900 35px/59px Montserrat;
+        /*  text-shadow: 0px 3px #000000;*/
+    }
+    button.accordion{
+        font: normal normal 900 24px/50px Montserrat;
+
+    }
+    .FAQ-Text{
+        font: normal normal 500 20px/25px Montserrat;
+    }
+}
+/*---------- Larger than medium screen ----------*/
+@media (min-width: 767.98px) {
+    .Section-2 .Section-2-img img{
+        margin-top: -20px;
+    }
+}

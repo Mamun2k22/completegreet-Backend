@@ -1,0 +1,65 @@
+.Section-1{
+    margin-bottom: 140px;
+}
+.Section-1 .orangetext{
+    font: normal normal 500 35px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #CD7D3B;
+}
+ .blueboldtext{
+    font: normal normal 900 40px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+}
+ .orangeboldtext{
+    font: normal normal 900 40px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #CD7D3B;
+}
+.Section-1 .about-us-text{
+    font: normal normal 500 18px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+    opacity: 1;
+}
+.Section-2{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 40px 80px #3B5DCD33;
+    border-radius: 42px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.Section-2-header{
+    font: normal normal 900 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+}
+.Section-2-text{
+    font: normal normal 500 20px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+.Signature-Section{
+bottom: 0px;
+    left: 15px;
+}
+.signature-before-text{
+    font: normal normal 900 18px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+}
+.Signature-Section img{
+    width: 150px;
+}
+.signatureName{
+    font: normal normal 500 18px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+}
+.Section-2 .row{
+    padding-bottom: 130px;
+}

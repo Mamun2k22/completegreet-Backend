@@ -1,0 +1,228 @@
+.Section-1{
+    background: rgba(59, 93, 205, 0.04) 0% 0% no-repeat padding-box;
+    border-radius: 42px;
+    /*width: max(calc(16px + 16 * (700vw - 600px) / 200),38rem);*/
+}
+.blueboldtext{
+    font: normal normal 900 40px/60px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+}
+.bluetext{
+    ext-align: left;
+    font: normal normal 500 40px/60px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+.pricing-description{
+    text-align: center;
+    font: normal normal 500 19px/26px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+.Duration{
+    background: rgba(59, 93, 205, 0.04) 0% 0% no-repeat padding-box;
+    border-radius: 37px;
+    font: normal normal bold 20px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+
+}
+.DurationS .active{
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    color: #fff;
+}
+.Monthly{
+    border-radius: 37px;
+cursor: pointer;
+}
+.Yearly{
+    border-radius: 37px;
+cursor: pointer;
+}
+.plan-container{
+    width: 24%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 40px 80px #00000012;
+    border-radius: 42px;
+    margin-right: 10px;
+}
+.Plan-Header{
+    font: normal normal 900 30px/54px Montserrat;
+    letter-spacing: 0px;
+    color: #9E5417;
+    text-transform: uppercase;
+}
+.Plan-Price .DollarSign{
+    font: normal normal 500 30px/47px Montserrat;
+    letter-spacing: 0px;
+    color: rgba(158, 84, 23, 0.64);
+}
+.Plan-Price  .Price {
+    font: normal normal 900 30px/54px Montserrat;
+    letter-spacing: 0px;
+    color: #9E5417;
+    text-transform: uppercase;
+}
+.Plan-Price .perMonth{
+    font: normal normal 500 10px/16px Montserrat;
+    letter-spacing: 0px;
+    color: rgba(158, 84, 23, 0.64);
+
+}
+.Description-list{
+    margin-left: 20px;
+    list-style: none;
+    text-align: left;
+    color: #CD7D3B ;
+    font: normal normal 500 17px/20px Montserrat;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.Description-list li:before{
+    content: '✓';
+    color: #CD7D3B ;
+    position: absolute;
+    left: 20px;
+}
+.premium-plan {
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 40px 80px #00000012;
+    border-radius: 42px;
+}
+.premium-plan .Plan-Header{
+    font: normal normal 900 30px/54px Montserrat;
+    letter-spacing: 0px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.premium-plan .Plan-Price .DollarSign{
+    font: normal normal 500 30px/47px Montserrat;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.64);
+}
+.premium-plan .Plan-Price  .Price {
+    font: normal normal 900 30px/54px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.premium-plan .Plan-Price .perMonth{
+    font: normal normal 500 10px/16px Montserrat;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 0.64);
+
+}
+.premium-plan .Description-list{
+    margin-left: 20px;
+    list-style: none;
+    text-align: left;
+    color: #ffffff;
+    font: normal normal 500 17px/20px Montserrat;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+.premium-plan .Description-list li:before{
+    content: '✓';
+    color: #ffffff;
+    position: absolute;
+    left: 20px;
+}
+.premium-plan .Description-list li:after{
+    content: '';
+    color: #ffffff;
+    position: absolute;
+    left: 19px;
+    background-color: #ffffff1c;
+    width: 12px;
+    height: 12px;
+    top: 22px;
+    border-radius: 50%;
+}
+.accordion {
+
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.6s;
+}
+
+.faq .active{
+    color: orange !important;
+}
+
+.accordion:before {
+    content: '▲';
+    color: #00155A;
+    font-weight: bold;
+    margin-left: 5px;
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.Section-3 .active:before {
+    content: "▼";
+    transition: all 0.5s ease-in-out;
+
+}
+
+.panel {
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+button.accordion{
+    font: normal normal 900 30px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    background-color: transparent;
+    padding: 10px;
+}
+.Section-3 .FAQ-Header{
+    width: 90%;
+    font: normal normal 900 40px/73px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+    text-transform: uppercase;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 40px 80px #00000012;
+    border-radius: 42px;
+    margin: 0 auto;
+}
+.Section-3 .FAQ-Container .customfaq{
+    background: rgba(59, 93, 205, 0.04) 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    margin: 10px;
+}
+.FAQ-Text{
+    font: normal normal 500 20px/25px Montserrat;
+    letter-spacing: 0px;
+    color: #00155A;
+}
+.Section-3 button:focus{
+    outline: none;
+    border: none;
+}
+@media (max-width: 768px) {
+    .plan-container{
+        width: 80%;
+    }
+}
+@media (pointer:none), (pointer:coarse) {
+    button.accordion{
+        font: normal normal 900 24px/50px Montserrat;
+
+    }
+    .FAQ-Text{
+        font: normal normal 500 20px/25px Montserrat;
+    }
+}

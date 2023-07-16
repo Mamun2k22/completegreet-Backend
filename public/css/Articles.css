@@ -1,0 +1,90 @@
+.Articles .underline{
+    width: 80px;
+    margin: 0 auto;
+    background-color: #13b7f3;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    height: 7px;
+}
+.Articles .article{
+    height: 100%;
+}
+.Articles .article-img{
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+
+}
+.Articles .article-text{
+   top: 80%;
+   transition: all 0.5s ease-in-out;
+
+}
+.Articles .article:hover .article-text{
+    top: 0%;
+    transition: all 0.5s ease-in-out;
+
+}
+.Articles .article:hover .article-img{
+    opacity: 0.4;
+    transition: all 0.5s ease-in-out;
+
+}
+.Article{
+    padding-bottom: 10px;
+
+}
+
+.Article-Body{
+    position: relative;
+    border-radius: 5px;
+cursor: pointer;
+    background-color: #343a40;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 1px 2px;
+
+}
+.Article-fig{
+    height: 250px;
+
+    }
+.Article-Body .Article-Title{
+   
+}
+.Article-Body .Article-img img{
+    position: absolute;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 100%;
+object-fit: cover;
+transition: all 0.35s ease-in-out;
+
+}
+.Article-Body .Article-Description{
+    max-height: 0px;
+    /* el over flow dh 34an mat5lish el transition yegry 2a5er 7ba */
+    overflow: hidden;
+    transition: all 0.35s ease-out;
+
+}
+
+.Article-Body:hover  .Article-Description{
+    max-height: 100px;
+    transition: all 0.35s ease-in;
+
+}
+.Article-Body:hover  .Article-img img{
+    opacity: 0.5;
+    transition: all 0.35s ease-in-out;
+
+}
+.Article-Body .Article-info{
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    left: 10px;
+}
+/* .Articles{
+    background: url('../img/home.jpg') center center fixed;
+    background-size:cover;
+} */

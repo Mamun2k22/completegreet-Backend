@@ -1,0 +1,227 @@
+
+body{
+    background-color: #eee;
+padding-top: 70px;
+}
+/*Coach Image Style*/
+.Coach-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* outer box style */
+.AddPlanBox{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 1px 2px rgba(0 0 0 ,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+}
+/*//--------- Client Personal Information Box Style ----------------//*/
+ .MyPlans{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+ .MyPlans .Name{
+    padding: 10px;
+    background-color: #333;
+    font-weight: 600;
+    color: #fff;
+}
+ .MyPlans .Plans-List{
+    border-right: 2px solid #eee ;
+    border-left:2px solid #eee;
+    overflow: auto;
+    max-height: 200px;
+}
+ .MyPlans .Plans-List .Plan-Info{
+    border-bottom: 2px solid #eee;
+    padding: 20px;
+}
+ .MyPlans .Plans-List label{
+    width: max-content;
+}
+ .MyPlans .Plans-List .Plan-Info:last-child{
+    border-bottom: none;
+}
+ .MyPlans .Plans-List  img{
+    width: 35px;
+    border-radius: 50%;
+
+
+
+}
+.Client-img{
+    width: 150px;
+    height: 150px;
+}
+.Client-Inodybtn{
+    background-color: #13b7f3!important;
+    border:1px solid #13b7f3!important;
+    width: 150px!important;
+}
+
+/*---------- Re Adjusting Bootstrap button ------------*/
+.btn-danger {
+    color: #fff;
+    width: 100%;
+    background-color: #333;
+    border-color: #333;
+    box-shadow: none;
+    width: max-content;
+
+}
+
+.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+
+}
+.btn-danger:focus, .btn-danger.focus {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+    box-shadow: none;
+}
+
+/*Table Style*/
+table{
+    border-spacing: 1px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin: 40px auto;
+    position: relative;
+
+}
+table thead tr {
+    height: 60px;
+    background: #333;
+    font-size: 16px;
+    color: #fff;
+}
+.Cell-Style {
+    padding-left: 10px;
+    word-break: break-all;
+    min-width: 100px;
+    height: 50px;
+}
+table tbody tr {
+   background-color: #eee;
+}
+table tbody td {
+vertical-align: middle!important;
+}
+/*--------------Making line throw if Day off --------------*/
+tr.Rest td:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-bottom: 1px solid #111;
+    width: 100%;
+}
+/*-------------- Adjustin Tabs Styles -----------------*/
+.list-group{
+    align-items: center;
+}
+.list-group-item {
+    border: none;
+    border-radius: 0px;
+    padding: 0.75rem 0px;
+    background-color: #eee;
+    width: 50%;
+}
+.list-group-item.active{
+    border: none;
+    background-color: #eee;
+    color: #000;
+}
+.list-group-item.active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #13b7f3;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    z-index: 1;
+    color: #000;
+    text-decoration: none;
+    background-color: #eee;
+}
+.list-group-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #13b7f3;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.list-group-item:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.list-group-item + .list-group-item.active {
+    margin-top: 0px;
+    border-top-width: 0px;
+}
+.tab-pane{
+    margin-top: 15px;
+}
+.tabs{
+    background-color: #eee;
+    /*border-radius: 5px!important;*/
+}
+/*------------- Style On Table Editing -------------------*/
+table td:focus-visible{
+    outline: NONE;
+    border-bottom: 2px solid #13b7f3!important;
+
+}
+/*-------------------- Style for the Remove sign -----------------*/
+.Remove-Sign{
+    width: 0px!important;
+    padding: 0px!important;
+}
+.Remove{
+    vertical-align: middle!important;
+    cursor: pointer;
+}
+.Remove-SuperSet{
+    vertical-align: middle!important;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+/*------------- for small Screen ----------------*/
+@media screen and (max-width: 406px) and (min-width:0px) {
+    .DayOff{
+        margin-top: 6px;
+    }
+}

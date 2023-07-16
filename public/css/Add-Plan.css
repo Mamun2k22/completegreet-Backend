@@ -1,0 +1,422 @@
+input{
+   /*  border:none;*/
+   /*background-image:none;*/
+   /*background-color:transparent;*/
+   /*-webkit-box-shadow: none;*/
+   /*-moz-box-shadow: none;*/
+   /*box-shadow: none;*/
+   /* width: 100%;*/
+   /* box-sizing: border-box;*/
+    word-break: break-word;
+}
+.Add-Plan{
+
+    padding: 80px 0px;
+}
+.Add-Plan .plan-info{
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 80px;
+
+}
+.Add-Plan .plan-info h3{
+    padding: 40px 0px;
+}
+.Add-Plan .btn-danger {
+    color: #fff;
+    width: 100%;
+    background-color: #333;
+    border-color: #333;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.Add-Plan .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+}
+.Add-Plan .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+textarea{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    resize: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+#Category{
+ outline: 0;
+    width: 100%;
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: none;
+
+}
+.add:after{
+    content: ' \002B';
+    color: green;
+    font-size: 40px;
+    position: relative;
+    top: 26px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+.add{
+    width: fit-content;
+    height: 0px;
+}
+.remove:after{
+    content: ' \2212';
+    color: red;
+    font-size: 50px;
+    position: relative;
+    top: 20px;
+    margin-left: 50%;
+    cursor: pointer;
+
+}
+.remove{
+    width: fit-content;
+    height: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Pimage-upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Login{
+    display: none;
+}
+.color{
+    background-image: linear-gradient(45deg,#00B7FF,#00f);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.holder{
+    height: auto;
+    width: 80%;
+  margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.holder .row{
+    padding: 10px;
+}
+html {
+    height: 100%;
+}
+.holder img{
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.wrapper{
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 20px 15px;
+    /*box-shadow: 5px 5px 30px rgba(0,0,0,0.2);*/
+}
+.wrapper .option{
+    background: #fff;
+        display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+.wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+input[type="radio"]{
+    display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3{
+    border-color: #333;
+    background: #333;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot,
+#option-3:checked:checked ~ .option-3 .dot{
+    background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before,
+#option-3:checked:checked ~ .option-3 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+}
+.wrapper .option span{
+    color: #808080;
+    padding-left: 5px;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span,
+#option-3:checked:checked ~ .option-3 span{
+    color: #fff;
+}
+.option-3{
+    width: max-content;
+}
+@media screen and (max-width: 992px) and (min-width:0px) {
+    .wrapper{
+        width: 100%;
+        flex-direction: column;
+    }
+    .wrapper .option{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+
+ .plan-img{
+    transition: all 0.5s ease-in-out;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: cover;
+
+}
+/* underline of about us Title */
+ .underline{
+    width: 80px;
+    margin: 0 auto;
+    background-color: #0062E0;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    height: 7px;
+}
+/* make space between sections */
+{
+    padding-bottom: 50px;
+}
+
+
+/* adjusting workout plan box appearance */
+ .workout-plan{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+     margin: 25px auto;
+    border-radius: 5px;
+    border: none;
+
+}
+ .plan-name{
+    text-transform: uppercase;
+}
+ .plan-weeks{
+    color: #666;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+ .workout-button{
+    padding-top: 20px;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/* workout plans link  */
+ .workout-link{
+    padding: 15px;
+    background-color: #13b7f3;
+    margin: 20px auto;
+    display: block;
+    font-weight: 700;
+    width: 27%;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+
+}
+ .workout-link:hover{
+    transform: scale(1.09);
+    color: #eee;
+    transition: all 0.5s ease-in-out;
+
+}
+/*  .price-container{
+    position: absolute;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+} */
+ .workout-head{
+    position: relative;
+}
+ .plan-body{
+    /* padding-top: 70px; */
+}
+ .plan-img{
+    transition: all 0.5s ease-in-out;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: cover;
+
+}
+ .price{
+    color: #13b7f3;
+    margin: 0px;
+}
+ .fa-star{
+    font-size: 15px;
+    color: #13b7f3;
+}
+ .rating-container  h6{
+    margin: 0px;
+    display: inline;
+}
+ .rating-container{
+    position: absolute;
+    background-color: #fff;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* adjusting plan image */
+ .plan-description{
+     height: 60px;
+
+}
+ .plan-info{
+
+}
+ .subscribe-btn{
+    background-color: #fff;
+    border: 2px solid #13b7f3;
+    border-radius: 2px;
+    text-transform: uppercase;
+
+
+}
+ .subscribe-btn:hover{
+    background-color: #13b7f3;
+    border: 2px solid #13b7f3;
+    color: #fff;
+}
+ .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle{
+    background-color: #13b7f3;
+    border: 2px solid #13b7f3;
+    color: #fff;
+}
+ .btn-danger:focus, .btn-danger.focus{
+    box-shadow: none;
+    color: #000;
+}
+ .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus{
+    box-shadow: none;
+
+}
+ .fixed-height{
+    height: 50px;
+    font-size: 30%;
+
+}
+#ImageEdit {
+    display: block;
+
+    /* This rule is very important, please don't ignore this */
+    max-width: 100%;
+}
+.Plan-Image-Edit{
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    display: none;
+}
+#PlanPhotoEdit .Plan-Edit-Save-btn{
+    display: block;
+    color: #fff;
+    background-color: #333;
+    border-color: #333;
+    box-shadow: none;
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald-VariableFont_wght.ttf) format('ttf'),
+    url(../fonts/Oswald-VariableFont_wght.ttf)format('truetype');
+}
+ .plan-description{
+    height: 60px;
+}
+ .plan-description span{
+    height: 0px;
+}
+ .plan-description {
+
+    border: none;
+}
+ .Add-Plan .btn-danger:focus, .btn-danger.focus {
+     box-shadow: none;
+     color: #fff;
+ }

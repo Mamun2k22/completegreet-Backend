@@ -1,0 +1,193 @@
+/*-------- virtual browser styles -------------*/
+.browser {
+    font-size: 18px;
+    /*min-height: calc(100vh + 2.1em);*/
+    /*max-height: calc(100vh + 2.1em);*/
+    min-height: 700px;
+    width: 100%;
+    padding: 2.1em 0 0 0;
+    border-radius: 0.25em;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.25em 0.9em -0.1em rgba(0,0,0,.3);
+}
+
+.browser .browser-navigation-bar {
+    display: block;
+    box-sizing: border-box;
+    height: 2.1em;
+    position: absolute;
+    top: 0;
+    padding: 0.3em;
+    width: 100%;
+    background: linear-gradient(to bottom, #edeaed 0%, #dddfdd 100%);
+    border-bottom: 2px solid #cbcbcb;
+}
+
+.browser i {
+    display: inline-block;
+    height: 0.7em;
+    width: 0.7em;
+    border-radius: 0.45em;
+    background-color: #eee;
+    margin: 0.4em 0.15em;
+}
+
+.browser i:nth-child(1) {background-color: rgb(255, 86, 79)}
+
+.browser i:nth-child(1):hover {background-color: rgb(255, 20, 25)}
+
+.browser i:nth-child(2) {background-color: rgb(255, 183, 42)}
+
+.browser i:nth-child(2):hover {background-color: rgb(230, 175, 42)}
+
+.browser i:nth-child(3) {background-color: rgb(37, 198, 58)}
+
+.browser i:nth-child(3):hover {background-color: rgb(10, 225, 10)}
+
+.browser .browser-tab-input {
+    font-size: 0.75em;
+    vertical-align: top;
+    display: inline-block;
+    height: 1.6em;
+    color: #aaa;
+    width: calc(100% - 6em);
+    border: 0.1em solid #E1E1E1;
+    border-radius: 0.25em;
+    background-color: #eee;
+    margin: 0.1em;
+    padding: 0 0.4em;
+}
+
+.browser-container {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: center;
+}
+.card-skeleton {
+    width: 97%;
+    height:98%;
+    margin: 5px;
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    background: #fff;
+    z-index: 10;
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.card-skeleton.hidden {
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    height: 0;
+    padding: 0
+}
+
+.card-skeleton-img {
+    width: 100%;
+    height: 120px;
+    background: #e6e6e6;
+    display: block
+}
+
+.animated-background {
+    will-change: transform;
+    animation: placeHolderShimmer 1s linear infinite forwards;
+    -webkit-backface-visibility: hidden;
+    background: #e6e6e6;
+    background: linear-gradient(90deg, #eee 8%, #ddd 18%, #eee 33%);
+    background-size: 800px 104px;
+    height: 100%;
+    position: relative
+}
+
+.skel-mask-container {
+    position: relative
+}
+
+.skel-mask {
+    background: #fff;
+    position: absolute;
+    z-index: 200
+}
+
+.skel-mask-1 {
+    width: 100%;
+    height: 15px;
+    top: 0;
+    left: 0
+}
+
+.skel-mask-2 {
+    width: 25%;
+    height: 10px;
+    top: 15px;
+    right: 0
+}
+
+.skel-mask-3 {
+    top: 25px
+}
+
+.skel-mask-3,
+.skel-mask-4 {
+    width: 100%;
+    height: 15px;
+    right: 0
+}
+
+.skel-mask-4 {
+    top: 50px
+}
+
+.skel-mask-5 {
+    width: 10%;
+    height: 30px;
+    top: 65px;
+    right: 30%
+}
+
+.skel-mask-6 {
+    width: 100%;
+    height: 15px;
+    top: 95px;
+    right: 0
+}
+/*----------------------------------------------*/
+.orangetext{
+    font: normal normal 500 35px/61px Montserrat;
+    letter-spacing: 0px;
+    color: #CD7D3B;
+    text-transform: uppercase;
+}
+.bluetext{
+    font: normal normal 900 45px/61px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+    text-transform: uppercase;
+}
+.Demo-Text{
+    font: normal normal 500 30px/50px Montserrat;
+    letter-spacing: 0px;
+    color: #CD7D3B;
+    text-transform: uppercase;
+}
+.demo-input .Input-Style > input + span::before, .Input-Style > textarea + span::before{
+    min-width: 35%;
+}
+@media (max-width: 767.98px) {
+    .demo-large-bubble{
+        right: 0px!important;
+    }
+  .demo-input  .Input-Style > input + span::before, .Input-Style > textarea + span::before{
+        min-width: 8%;
+    }
+}

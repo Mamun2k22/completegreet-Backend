@@ -1,0 +1,199 @@
+body{
+   background-color: #EEF2FF;
+}
+
+.navbar{
+
+}
+.navbar .logo-img{
+   width:  175px;
+}
+body:not(.layout-fixed) .main-sidebar{
+   position: unset;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   border-radius: 26px;
+   opacity: 1;
+   margin-left: 30px;
+}
+#sidebar-menu{
+   margin-bottom: 40px;
+   z-index: 10;
+   padding-top: 0.1px;
+   margin-top: 30px;
+   width: 250px;
+   box-shadow:0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22)!important;
+   transition: all 0.3s ease-in-out;
+}
+#sidebar-menu img{
+   width: 60px;
+   max-width: 90%;
+   border-radius: 50%;
+   box-shadow: 0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
+}
+/*.sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before{*/
+/*   margin-left: 30px;*/
+/*}*/
+.profile-info{
+   width:70%;
+   height: 40px;
+   background: rgba(59, 93, 205,0.11) 0% 0% no-repeat padding-box;
+   border-radius: 9px;
+   transition: width 0.3s ease-in-out;
+   overflow: hidden;
+
+}
+.profile-info a{
+   transition: width 0.3s ease-in-out;
+
+}
+.profile-info-collapse{
+   width: 0%;
+   transition: all .3s ease-in-out;
+   overflow: hidden;
+   padding: 0px!important;
+}
+.profile-text{
+   color: #000;
+
+}
+.profile-text:hover{
+   color: #000;
+   text-decoration: none;
+}
+.arrow-down{
+   width: 0;
+   height: 0;
+   border-left: 10px solid transparent;
+   border-right: 10px solid transparent;
+   border-top: 10px solid #2f2f2f;
+   font-size: 0;
+   line-height: 0;
+}
+#aside-collapse-button{
+   position: sticky;
+   background-color: #fff;
+   border-radius: 50%;
+   color: #3B5DCD;
+   left: 268px;
+   height: 40px;
+   display: flex;
+   width: 40px;
+   /*float: right;*/
+   /*top: 135px;*/
+   padding: 0px;
+   margin-top: 27px;
+   margin-right: -19px;
+   align-items: center;
+   justify-content: center;
+}
+#aside-collapse-button:hover{
+   color: #3B5DCD;
+}
+
+.sidebar-collapse-width{
+   width:4.6rem!important;
+   transition: all .3s ease-in-out;
+
+}
+.sidebar-collapse.sidebar-mini .main-sidebar .nav-sidebar .nav-link, .sidebar-collapse.sidebar-mini-md .main-sidebar .nav-sidebar .nav-link, .sidebar-collapse.sidebar-mini-xs .main-sidebar .nav-sidebar .nav-link{
+   width: inherit;
+}
+.aside-collapse-button:hover + .aside-container{
+   width: 280px;
+}
+.sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand).sidebar-focused, .sidebar-mini.sidebar-collapse .main-sidebar:not(.sidebar-no-expand):hover{
+width: 4.6rem;
+}
+.page-tabs .nav-link{
+  background-color: transparent!important;
+   color: #000!important;
+   height: 50px;
+   opacity: 0.43;
+}
+.page-tabs .active{
+
+   opacity: 1;
+}
+
+.page-tabs .nav-link:before {
+   content: "";
+   position: absolute;
+   width: 5px;
+   height: 100%;
+   border-radius: 0px 4px 4px 0px;
+   bottom: 0;
+   left: 0;
+   background-color: #3B5DCD;
+   visibility: hidden;
+   -webkit-transform: scaleY(0);
+   transform: scaleY(0);
+   -webkit-transition: all 0.3s ease-in-out 0s;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.page-tabs .nav-link:hover:before {
+   visibility: visible;
+   -webkit-transform: scaleY(1);
+   transform: scaleY(1);
+}
+.page-tabs .active::before{
+   content: "";
+   position: absolute;
+   width: 5px;
+   height: 100%;
+   border-radius: 0px 4px 4px 0px;
+   bottom: 0;
+   left: 0;
+   background-color: #3B5DCD;
+   visibility: visible;
+   -webkit-transform: scaleX(1);
+   transform: scaleX(1);
+}
+
+.sidebar-icon{
+   color: #06227E;
+   font-size: 25px;
+}
+.sidebar-link-text{
+   width: 100%;
+   overflow: hidden;
+   white-space: nowrap;
+   transition: all 0.3s ease-in-out;
+
+}
+.sidebar{
+   margin-top:-32px ;
+}
+.w-0{
+   width: 0%;
+}
+.button__badge {
+   background-color: #D5073C;
+   color: white;
+   padding: 1px 3px;
+   font-size: 10px;
+   position: absolute;
+   top: 3px;
+   width: 10px;
+   right: 17px;
+   height: 10px;
+   border-radius: 50%;
+}
+/*media queries*/
+@media (max-width: 848.98px) {
+   body:not(.layout-fixed) .main-sidebar{
+      margin-left: 0px;
+
+   }
+}
+@media (max-width: 576px) {
+   .sidebar-column{
+      padding-top: 27px;
+   }
+   body:not(.layout-fixed) .main-sidebar{
+      position: absolute;
+      z-index: 2;
+      margin-left: -250px;
+      width: 250px!important;
+   }
+}

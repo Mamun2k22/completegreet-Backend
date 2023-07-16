@@ -1,0 +1,159 @@
+video {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    align-items: center;
+    background: #eaeaea;
+    /*display: grid;*/
+    /*grid-gap: 1rem;*/
+    /*grid-template-columns: 50px auto min(115px);*/
+    padding: .5rem;
+}
+
+.repeat-btn {
+    border: 0;
+    display: flex;
+    justify-content: center;
+    background: #e52e71;
+    color: white;
+    position: absolute;
+    order: 1;
+    padding: 0.5rem;
+    transition: opacity .25s ease-out;
+    left: 2px;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+/*button:hover {*/
+/*    cursor: pointer;*/
+/*    opacity: .8;*/
+/*}*/
+
+
+/* Fallback stuff */
+progress[value] {
+    appearance: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+    color: dodgerblue;
+    display: inline;
+    height: 15px;
+    order: 1;
+    position: relative;
+    width: 100%;
+}
+
+/* WebKit styles */
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0,.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(
+            to right,
+            #ff8a00, #e52e71
+    );
+    border-radius: 3px;
+    position: relative;
+    transition: width 0.2s linear;
+}
+
+/* Firefox styles */
+progress[value]::-moz-progress-bar {
+    background-image: -moz-linear-gradient(
+            to right,
+            #ff8a00, #e52e71
+    );
+    border-radius: 3px;
+    position: relative;
+    transition: width 0.2s linear;
+}
+
+
+/*------------ video Controls styles -------------*/
+.video-controls {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-btn {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+}
+
+#pause-btn {
+    top: 0px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+
+}
+
+#mute-btn {
+    top: 71px;
+    left: 5px;
+
+}
+
+#unmute-btn {
+    top: 71px;
+    left: 5px;
+    visibility: hidden;
+
+}
+
+#stop-btn {
+    left: 115px;
+}
+
+#replay-btn {
+    top: 15px;
+    left: 5px;
+}
+#Exit-btn{
+    top: 14px;
+    right: 5px;
+}
+#Back-btn{
+    top: 5px;
+    left: 5px;
+}
+.video-progressbar{
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
+    height: 12px;
+    border-radius:0;
+    right: 50%;
+    /* left: 0; */
+    overflow: hidden;
+    transform: translateX(50%);
+    background: #ffffff6e 0% 0% no-repeat padding-box;
+    cursor: pointer;
+}
+.video-progressbar span{
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    transition: all .25s ease-out;
+
+    background-color: #3B5DCD;
+}

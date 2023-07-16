@@ -1,0 +1,281 @@
+.Title{
+    font: normal normal bold 40px/49px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.title-name{
+    font: normal normal bold 40px/49px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+}
+.real-time-overview-text{
+    font: normal normal bold 19px/23px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.overview-card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #3B5DCD21;
+    border-radius: 22px;
+    opacity: 1;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+.red-part{
+    background: #F46875 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #F468755C;
+}
+.blue-part{
+    background: #6871F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #6871F45C;
+}
+.orange-part{
+    background: #F4A568 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #F4A5685C;
+}
+.pink-part{
+    background: #F468A9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #F468A95C;
+}
+.overview-bottom-part{
+    border-radius: 0px 0px 22px 22px;
+    opacity: 1;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 15px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.overview-no{
+    position: absolute;
+    top: 38.5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font: normal normal bold 37px/45px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.overview-left-text{
+    font: normal normal bold 11px/14px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    position: absolute;
+    left: 4px;
+    bottom: 34px;
+}
+.overview-right-text{
+    font: normal normal bold 11px/14px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    position: absolute;
+    right: 4px;
+    bottom: 34px;
+}
+/*--------------- User Profile Page ----------------*/
+.personal-info-container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #3B5DCD21;
+    border-radius: 22px;
+}
+.profile-img .file {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0px;
+    right: 0px;
+    width: 30px;
+    border: none;
+    display: flex;
+    border-radius: 50%;
+    font-size: 15px;
+    justify-content: center;
+    background: #292929 0% 0% no-repeat padding-box;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-img .image-holder{
+
+    display: inline-block;
+    position: relative;
+
+}
+.profile-img form{
+    height: 0px;
+}
+.profile-img img{
+    width: 110px;
+    border-radius: 50%;
+    border: 2px solid #3B5DCD;
+}
+.logutClass{
+    color: inherit;
+    text-decoration: none;
+}
+.logutClass:hover{
+    color: inherit;
+    text-decoration: none;
+}
+.user-preferences-container{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #3B5DCD21;
+    border-radius: 22px;
+    font: normal normal bold 19px/29px Montserrat;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 100%;
+    background: gainsboro;
+    -webkit-appearance: none;
+    height: 20px;
+    background: #efefef;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+}
+
+input[type="checkbox"]:checked{
+    background:#3B5DCD;
+}
+
+input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    background: #fff;
+    /*box-shadow: 0px 1px 6px 1px gainsboro;*/
+    border-radius: 50%;
+    top: 0px;
+    transform: scale(0.7);transition: 0.5s;
+}
+
+input[type="checkbox"]:checked:before{
+    left:40px;
+}
+.center{
+    width: 60px;
+    height: auto;
+}
+.live-chats-widget{
+    padding: 10px 7px;
+    background: rgba(59, 93, 205, 0.29) 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+}
+.live-chats-widget-header{
+    font: normal normal bold 25px/30px Montserrat;
+    letter-spacing: 0px;
+    color: #000D36;
+}
+.live-chats-widget-chat{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 18px #3B5DCD21;
+    border-radius: 14px;
+}
+.live-chats-widget-chat .img{
+    width: 50px;
+}
+.live-chats-widget-name{
+    font: normal normal bold 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+}
+.live-chats-widget-message{
+    font: italic normal 500 12px/15px Montserrat;
+    letter-spacing: 0px;
+    color: #3B5DCD;
+}
+.live-chats-widget-button{
+    background: rgba(255, 255, 255, 0.52) 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    font: normal normal bold 17px/20px Montserrat;
+    letter-spacing: 0px;
+    color: #06227E;
+
+}
+.live-chats-widget-button a, live-chats-widget-button a:hover{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 10px 16px;
+}
+.visitor-progress-bar{
+    background-color: #ffff;
+    width: 50vw;
+    height: 50px;
+    /*filter: drop-shadow(0 0 6px rgba(0,0,0,0.2) );*/
+    /*box-shadow: 0 12px 28px 0 rgba(0,0,0,0.2), 0 2px 4px 0 rgba(0,0,0,0.2);*/
+
+    padding: 10px;
+}
+.visitor-progress-bar .progress-bar{
+    border-radius: 15px;
+    background: transparent linear-gradient(107deg, #3B5DCD 0%, #1E2F67 100%) 0% 0% no-repeat padding-box;
+}
+/*--------- Editing Scroll bar for textarea ------------*/
+textarea::-webkit-scrollbar{
+    width: 5px;
+    border: none;
+    background: rgba(51, 51, 51, 0.5);
+}
+textarea::-webkit-scrollbar-thumb{
+    width: 5px;
+    border: none;
+    background: rgba(51, 51, 51, 0.5);
+}
+textarea::-webkit-scrollbar-track {
+    width: 8px;
+    border: none;
+    background: #fff;
+}
+.Button{
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff ;
+    display: block;
+    width: fit-content;
+    border: none;
+    border-bottom: 4px solid #9E5417 ;
+    background: #CD7D3B 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    cursor: pointer;
+    outline: none!important;
+}
+.newbubblewidget{
+    background: #3B5DCD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 16px 19px #3B5DCD82;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 100000;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .newbubblewidget{
+
+        bottom: 20px;
+        right: 20px;
+         }
+}
